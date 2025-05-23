@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <title>bombaoglan - CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <img src="profile.jpg" alt="Profil Sekli" class="profile-pic">
+            <div class="contact">
+                <h2>Elaqe <button class="edit-btn" onclick="elaqeniDeyis()">Deyis</button></h2>
+                <div id="elaqeMelumatlari">
+                </div>
+            </div>
+            
+            <h2 class="accordion">Tehsil <button class="edit-btn" onclick="tehsiliDeyis()">Deyis</button></h2>
+            <div class="panel">
+                <div id="tehsilMelumatlari">
+                </div>
+                <button class="add-btn" onclick="yeniTehsilElaveEt()">Tehsil Elave Et</button>
+            </div>
+            
+            <h2 class="accordion">Bacariqlar <button class="edit-btn" onclick="bacariqlariDeyis()">Deyis</button></h2>
+            <div class="panel">
+                <ul id="bacariqlarSiyahisi">
+                </ul>
+                <button class="add-btn" onclick="yeniBaracariqElaveEt()">Bacariq Elave Et</button>
+            </div>
+            
+            <h2 class="accordion">Diller <button class="edit-btn" onclick="dilleriDeyis()">Deyis</button></h2>
+            <div class="panel">
+                <ul id="dillerSiyahisi">
+                </ul>
+                <button class="add-btn" onclick="yeniDilElaveEt()">Dil Elave Et</button>
+            </div>
+        </div>
+        
+        <div class="right-side">
+            <h1 id="tamAd">Ad <span>bombaoglan</span> <button class="edit-btn" onclick="adiDeyis()">Deyis</button></h1>
+            <h3 id="isBasligi">bomba Mutexessisi <button class="edit-btn" onclick="isBasliginiDeyis()">Deyis</button></h3>
+            
+            <div class="profile">
+                <h2>Profil <button class="edit-btn" onclick="profiliDeyis()">Deyis</button></h2>
+                <p id="profilMetni">bomba kimiyem</p>
+            </div>
+            
+            <h2 class="accordion">Is Tecrubesi <button class="edit-btn" onclick="isTecrubesiDeyis()">Deyis</button></h2>
+            <div class="panel">
+                <div id="isTecrubesi">
+                </div>
+                <button class="add-btn" onclick="yeniIsElaveEt()">Is Elave Et</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
